@@ -78,6 +78,7 @@ describe('shaped-script', function () {
       };
 
       const options = shapedScript.getRollTemplateOptions(msg);
+      options.character.get = function () { return ''; };
 
       const setVals = {};
 
